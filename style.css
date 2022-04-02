@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*---------- all similar content styling codes ----------*/
+section{
+    padding: 120px 0;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about, .skills, .projects, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.skills .skills-content,
+.projects .projects-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title{ 
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ---------------------navbar styling--------------------- */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 8px 0;
+    /* background: rgb(22, 67, 93);  */
+    background: rgb(56, 57, 58); 
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{ 
+    color: rgb(59, 164, 235);
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 12px;
+    margin-left: 0px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: rgb(59, 164, 235);
+}
+
+
+/* ---------------------home section styling--------------------- */
+.home{
+    display: flex;
+    background: url("images/back1.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+
+.home .max-width .row{
+  margin-right: 0;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{ 
+    color: rgb(59, 164, 235);
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #eee;
+    color: #111;
+    font-size: 25px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: rgb(59, 164, 235);
+    background: none;
+}
+
+/* ---------------------about section styling--------------------- */
+.about .about-content .right .text{
+    font-size: 25px; 
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: rgb(2, 127, 211);
+}
+
+.about .about-content .right p{ 
+    text-align: justify;
+    font-size: 20px;
+    /* text-indent: 50px; */
+    line-height: 1.5;
+}
+
+/* ---------------------skills section styling--------------------- */
+.skills {  
+    color:#fff;
+    background: #111;
+}
+
+.skills .title::before, 
+.title::before{
+    background: #fff;
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align:justify;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.skills .skills-content .left p span{
+    color: rgb(59, 164, 235)
+}
+
+/* ---------------------projects section styling--------------------- */
+.projects {  
+    color:#111;
+    background: #fff;
+}
+
+.projects .title::before, 
+.title::before{
+    background: #111;
+}
+
+.projects .projects-content .left p{ 
+    text-align: justify;
+}
+
+.projects .projects-content .left .icons{
+    margin: 10px 0;
+}
+
+.projects .projects-content .text{
+    color: rgb(2, 127, 211);
+    text-align:justify;
+}
+
+/* ---------------------footer section styling--------------------- */
+footer{
+    background: rgb(22, 67, 93);
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a{
+    color:  rgb(108, 186, 238);
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* ---------------------responsive media query start--------------------- */
+@media (max-width: 1104px) {
+    @media (max-width: 991px) {
+        .max-width{
+            padding: 0 50px;
+        }
+    }
+    
+    .about .about-content .column{
+        width: 100%;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+}
